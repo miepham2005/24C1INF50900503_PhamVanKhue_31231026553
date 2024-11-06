@@ -32,5 +32,26 @@ namespace Fundamentals_of_programing_PhamVanKhue
             Console.WriteLine("So lon nhat trong ba so duoc nhap vao la" + m);
             Console.ReadKey();  
         }
+        //ex.02: to calculate the factorial of a number 
+        static int Factorial(int a)
+        {
+         if ( a < 0 )           
+                throw new ArgumentException ("Input must be non-negative integer"); //bao loi          
+            if (a == 0 || a == 1) 
+                return 1;
+            return a*Factorial(a - 1);
+            /*int result;
+             for(int i = 1; i < a;i++) { result *= i; }
+             return result; */       
+        }
+        static void Main51(string[] args)
+        {
+            Console.Write("Enter an integer: ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            int result = Factorial(b);
+            Console.WriteLine($"{b}! = {result}");
+            Console.ReadKey();
+        }
+        //
     }
 }
