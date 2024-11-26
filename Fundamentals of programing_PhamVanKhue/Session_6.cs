@@ -39,8 +39,18 @@ namespace Fundamentals_of_programing_PhamVanKhue
                 array[i] += 2;
             }
         }
-        //cach 2
-        static void Main(string[] args)
+        static void Printarray(int[] array)
+        {
+            Console.Write("Cac phan tu cua day : ");
+            Console.Write((int)array[0]);
+            for (int i = 1; i < array.Length; i++)
+            {
+                Console.Write(" " + array[i]);
+
+            }
+            Console.WriteLine();
+        }
+        static void Main6(string[] args)
         {
             Console.Write("Nhap so phan tu cua day: ");
             int n = Convert.ToInt32(Console.ReadLine());
@@ -50,22 +60,13 @@ namespace Fundamentals_of_programing_PhamVanKhue
                 Console.Write($"Nhap phan tu thu {i + 1} cua day: ");
                 array[i] = int.Parse(Console.ReadLine());
             }
-            //in day ban dau
+            //1. in day ban dau
             Printarray(array);
-            //cong hai cho moi phan tu
+            //2. cong hai cho moi phan tu
             IncreasesingArrayValue(array);
+            Console.WriteLine("Sau khi cong them hai cho moi phan tu trong day");
             Printarray(array);
-        }
-        static void Printarray(int[] array)
-        {
-            Console.Write("Cac phan tu cua day : ");
-            Console.Write((int)array[0]);
-            for (int i = 1; i < array.Length; i++)
-            {
-                Console.Write(", " + array[i]);
-
-            }
-            Console.WriteLine();
+            //3.
         }
     }
 }

@@ -5,9 +5,10 @@ namespace Fundamentals_of_programing_PhamVanKhue
 {
     internal class session1
     {
-        public static void Main11()
+        public static void Main0()
         {
-            Session_4.Question_11();
+            Session_4.Question_10();
+            //Session_5.Songuyento();
             //Question_02();
             //Question_04();
             //Question_05();

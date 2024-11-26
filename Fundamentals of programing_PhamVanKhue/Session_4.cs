@@ -191,14 +191,12 @@ namespace Fundamentals_of_programing_PhamVanKhue
         }
         public static void Question_10()//tim so hoan hao trong mot khoang so da cho truoc 
         {   int count = 0;int start,end;
-            do
-            {
+            
                 Console.Write("Nhap so bat dau: ");
                 start = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Nhap so ket thuc: ");
                 end = Convert.ToInt32(Console.ReadLine());
-                if (start == 0) { Console.WriteLine("So bat dau khong duoc phep bang khong"); }
-            } while (start == 0);
+                if (start == 0) { start++; }
                 for (int i = start; i <= end; i++)
                 {
                     int sum = 0;
@@ -229,7 +227,7 @@ namespace Fundamentals_of_programing_PhamVanKhue
                 Console.Write("Nhap vao mot so: ");
                 a = int.Parse(Console.ReadLine());
             }while (a <= 1);
-            for (int i = 1; i*i < a; i++)
+            for (int i = 1; i*i <= a; i++)
             {
                 if (a % i == 0) count++;
             }
@@ -239,6 +237,7 @@ namespace Fundamentals_of_programing_PhamVanKhue
                 }
              else { Console.WriteLine($"{a} khong phai so nguyen to"); }
         }
+
     }
 }
     
