@@ -45,7 +45,7 @@ namespace Fundamentals_of_programing_PhamVanKhue
             }
         }
         //Baitap2.Tao mang rang cua voi cac phan tu ngau nhien
-        public static void Main()
+        public static void Main5()
         {
             //1. Cho nguoi dung tu nhap hang va cot
             int column;
